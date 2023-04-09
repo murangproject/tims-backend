@@ -1,8 +1,6 @@
 # 2022 update
 FROM php:8.2-fpm
 
-ENV allow_url_fopen=0
-
 # setup user as root
 USER root
 
