@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RoleController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -23,3 +24,6 @@ Route::get('/user/all', function (Request $request) {
     $users = User::all();
     return $users;
 });
+
+Route::resource('roles', RoleController::class);
+
