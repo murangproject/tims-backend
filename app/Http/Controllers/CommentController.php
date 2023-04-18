@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoresubjectRequest;
-use App\Http\Requests\UpdatesubjectRequest;
-use App\Models\subject;
+use App\Http\Requests\StoreCommentRequest;
+use App\Http\Requests\UpdateCommentRequest;
+use App\Models\Comment;
 
-class SubjectController extends Controller
+class CommentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,7 +19,7 @@ class SubjectController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoresubjectRequest $request)
+    public function store(StoreCommentRequest $request)
     {
         //
     }
@@ -27,7 +27,7 @@ class SubjectController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(subject $subject)
+    public function show(Comment $comment)
     {
         //
     }
@@ -35,7 +35,7 @@ class SubjectController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatesubjectRequest $request, subject $subject)
+    public function update(UpdateCommentRequest $request, Comment $comment)
     {
         //
     }
@@ -43,7 +43,7 @@ class SubjectController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(subject $subject)
+    public function destroy(Comment $comment)
     {
         //
     }

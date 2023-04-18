@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Semester;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreAcademicYearRequest;
+use App\Http\Requests\UpdateAcademicYearRequest;
+use App\Models\AcademicYear;
 
-class SemesterController extends Controller
+class AcademicYearController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +19,7 @@ class SemesterController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreAcademicYearRequest $request)
     {
         //
     }
@@ -26,7 +27,7 @@ class SemesterController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Semester $semester)
+    public function show(AcademicYear $academicYear)
     {
         //
     }
@@ -34,7 +35,7 @@ class SemesterController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Semester $semester)
+    public function update(UpdateAcademicYearRequest $request, AcademicYear $academicYear)
     {
         //
     }
@@ -42,7 +43,7 @@ class SemesterController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Semester $semester)
+    public function destroy(AcademicYear $academicYear)
     {
         //
     }

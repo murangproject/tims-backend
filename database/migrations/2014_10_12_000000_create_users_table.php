@@ -17,6 +17,14 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            // personal info
+            $table->string('first_name');
+            $table->string('middle_name')->nullable();
+            $table->string('last_name');
+            $table->string('address')->nullable();
+            $table->string('description')->nullable();
+            $table->string('role_name')->required();
+            $table->enum('role_type', ['admin', 'committee_chair', 'committee_member', 'stakeholder'])->default('committee_member');
             $table->rememberToken();
             $table->timestamps();
         });
